@@ -1,0 +1,530 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Patryk Pilecki</title>
+    <link rel="icon" href="fav.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Muli:300|Raleway:300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <script>
+        /* Open when someone clicks on the span element */
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+        $(function() {
+            // This will select everything with the class smoothScroll
+            // This should prevent problems with carousel, scrollspy, etc...
+            $('.smoothScroll').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1300); // The number here represents the speed of the scroll in milliseconds
+                        return false;
+                    }
+                }
+            });
+        });
+
+
+
+
+
+        // Change the speed to whatever you want
+        // Personally i think 1000 is too much
+        // Try 800 or below, it seems not too much but it will make a difference
+    </script>
+    <a class="smoothScroll" href="#welcome"><img id="btt" class="img-responsive" img src="https://png.icons8.com/ios/50/000000/mouse-scrolling.png"></a>
+
+
+
+    <!-- NAV -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a class="smoothScroll" href="#welcome" onclick="closeNav()">Start</a>
+            <a class="smoothScroll" href="#about" onclick="closeNav()">O mnie</a>
+            <a class="smoothScroll" href="#portfolio" onclick="closeNav()">Portfolio</a>
+            <a class="smoothScroll" href="#oferta" onclick="closeNav()">Oferta</a>
+            <a class="smoothScroll" href="#kontakt" onclick="closeNav()">Kontakt</a>
+        </div>
+
+
+    </div>
+
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span id="openmenu" onclick="openNav()"><b><img src="menu.png" alt="Smiley face" height="42" width="42"></b></span>
+
+    <center>
+        <!-- WELCOME -->
+        <div id="welcome">
+            <h1>Cześć, jestem Patryk. Stwórzmy </br>razem coś niesamowitego.</h1>
+            <!-- TUTAJ BUTTON ZAMIAST SCROLLA -->
+            <a class="smoothScroll" href="#about"><button type="button" id="but">POZNAJ MNIE</button></a>
+        </div>
+    </center>
+
+
+
+
+
+
+    <header class="header container-fluid">
+        <div class="nav-toggle-wrapper">
+            <button class="nav-toggle-btn">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+          </button>
+        </div>
+        <nav class="header__nav">
+            <ul class="nav">
+                <li class="header__nav__item"><a href="#about" data-ref="about">about</a></li>
+                <li class="header__nav__item"><a href="#portfolio" data-ref="portfolio">work</a></li>
+                <li class="header__nav__item"><a href="#contact" data-ref="contact">contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="about" class="main-section">
+
+            <div class="wrapper" style="margin-top:270px;">
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Doświadczenie </h3>
+                <p class="about_experience" style="    border-left: 2px solid;padding-left:2.2em;padding:40px;padding-top:0px;">- <strong>GEOTIK Sp. z o.o. </strong> - Front-End/Web praktyki studenckie</br>- <strong> SolvayCompany</strong> - Front-End/Web - 02.18 r. - do teraz </p>
+            </div>
+
+            <div class="wrapper">
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kim Jestem ? </h3>
+                <p class="about__intro">
+                    Web developerem, który nie boi się wyzwań. </br>Z Każdym dniem rozwijam się, aby tworzyć estetyczne, zoptymalizowane oraz dostępne strony internetowe, które pozwolą Ci zaistnieć </br> w internecie i znacząco zwiększyć wyniki Twojej
+                    działalności.
+                </p>
+                <a class="smoothScroll" href="#oferta" id="do_portfolio"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zobacz w czym mogę Ci pomóc</a>
+            </div>
+        </section>
+
+        <section id="portfolio" class="container main-section">
+            <h1 style="
+                color: #7e7d7d;     
+                font-weight: 300;
+                line-height: 1.1;
+                font-size:32px; ">Zrealizowane Projekty</h1>
+            <div class="filters row js-dis">
+                <h4 class="filters__title"> <i class="fa fa-tags"></i> </h4>
+                <ul class="filters__list">
+                    <li class="filters__label is-active"> Wszystkie </li>
+                    <li class="filters__label" data-cat="fcc"> Strony internetowe</li>
+                    <li class="filters__label" data-cat="personal"> aplikacje i prywatne projekty </li>
+                </ul>
+            </div>
+
+            <div class="portfolio__project-wrapper row">
+
+                <div class="portfolio__project col-xs-12 col-sm-6 col-lg-3 text-center" data-cat="fcc">
+                    <a href="https://codepen.io/eevu/full/BoGMJm/" target="_blank" title="view live">
+                        <div class="portfolio__project__preview">
+                            <img src="https://aprc.it/api/400x400/https://property-advisors.pl/" alt="random quotes">
+
+                        </div>
+                        <div class="portfolio__project__description">
+                            <div class="info-wrapper">
+                                <h3 class="portfolio__project__name">Landing Page</h3>
+                                <p class="portfolio__project__category">Zobacz więcej </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio__project col-xs-12 col-sm-6 col-lg-3" data-cat="fcc">
+                    <a href="https://codepen.io/eevu/full/YQjeNM/" target="_blank" title="view live">
+                        <div class="portfolio__project__preview">
+                            <img src="https://aprc.it/api/400x400/http://www.skodarapid-warszawa.pl/" alt="weather app">
+
+                        </div>
+                        <div class="portfolio__project__description">
+                            <div class="info-wrapper">
+                                <h3 class="portfolio__project__name">Landing Page</h3>
+                                <p class="portfolio__project__category"> Zobacz więcej</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="portfolio__project col-xs-12 col-sm-6 col-lg-3" data-cat="fcc">
+                    <a href="https://codepen.io/eevu/full/mEyLPx" target="_blank" title="view live">
+                        <div class="portfolio__project__preview">
+                            <img src="https://aprc.it/api/400x400/https://www.solvaycompany.pl/" alt="wikipedia viewer">
+
+
+                        </div>
+                        <div class="portfolio__project__description">
+                            <div class="info-wrapper">
+                                <h3 class="portfolio__project__name">Landing Page</h3>
+                                <p class="portfolio__project__category"> Zobacz więcej</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio__project col-xs-12 col-sm-6 col-lg-3" data-cat="fcc">
+                    <a href="#" title="coming soon">
+                        <div class="portfolio__project__preview">
+                            <img src="https://aprc.it/api/400x400/https://www.toyotacamry.pl/" alt="javascript calculator">
+
+
+                        </div>
+                        <div class="portfolio__project__description">
+                            <div class="info-wrapper">
+                                <h3 class="portfolio__project__name">Landing Page</h3>
+                                <p class="portfolio__project__category"> Zobacz więcej</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio__project col-xs-12 col-sm-6 col-lg-3" data-cat="fcc">
+                    <a href="#" title="coming soon">
+                        <div class="portfolio__project__preview">
+                            <img src="https://aprc.it/api/400x400/https://luxuryrealtymap.pl/" alt="javascript calculator">
+
+
+
+                        </div>
+                        <div class="portfolio__project__description">
+                            <div class="info-wrapper">
+                                <h3 class="portfolio__project__name">Landing Page</h3>
+                                <p class="portfolio__project__category"> Zobacz więcej</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio__project col-xs-12 col-sm-6 col-lg-3" data-cat="fcc">
+                    <a href="#" title="coming soon">
+                        <div class="portfolio__project__preview">
+                            <img src="https://aprc.it/api/400x400/http://mercedesglc-rzeszow.pl/" alt="javascript calculator">
+
+
+                        </div>
+                        <div class="portfolio__project__description">
+                            <div class="info-wrapper">
+                                <h3 class="portfolio__project__name">Landing Page</h3>
+                                <p class="portfolio__project__category"> Zobacz więcej</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio__project col-xs-12 col-sm-6 col-lg-3" data-cat="fcc">
+                    <a href="#" title="coming soon">
+                        <div class="portfolio__project__preview">
+                            <img src="https://aprc.it/api/400x400/http://www.bmw-mtrackdays.pl/" alt="javascript calculator">
+
+
+                        </div>
+                        <div class="portfolio__project__description">
+                            <div class="info-wrapper">
+                                <h3 class="portfolio__project__name">Landing Page</h3>
+                                <p class="portfolio__project__category"> Zobacz więcej</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio__project col-xs-12 col-sm-6 col-lg-3" data-cat="fcc">
+                    <a href="#" title="coming soon">
+                        <div class="portfolio__project__preview">
+                            <img src="https://aprc.it/api/400x400/http://mieszkania-ochota.pl/" alt="javascript calculator">
+
+
+                        </div>
+                        <div class="portfolio__project__description">
+                            <div class="info-wrapper">
+                                <h3 class="portfolio__project__name">Landing Page</h3>
+                                <p class="portfolio__project__category"> Zobacz więcej</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio__project col-xs-12 col-sm-6 col-lg-3" data-cat="fcc">
+                    <a href="#" title="coming soon">
+                        <div class="portfolio__project__preview">
+                            <img src="https://aprc.it/api/400x400/http://www.skodakaroq-warszawa.pl/" alt="javascript calculator">
+
+
+                        </div>
+                        <div class="portfolio__project__description">
+                            <div class="info-wrapper">
+                                <h3 class="portfolio__project__name">Landing Page</h3>
+                                <p class="portfolio__project__category"> Zobacz więcej</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio__project col-xs-12 col-sm-6 col-lg-3" data-cat="fcc">
+                    <a href="#" title="coming soon">
+                        <div class="portfolio__project__preview">
+                            <img src="https://aprc.it/api/400x400/https://www.zaborowski.com.pl/" alt="javascript calculator">
+
+
+                        </div>
+                        <div class="portfolio__project__description">
+                            <div class="info-wrapper">
+                                <h3 class="portfolio__project__name">Landing Page</h3>
+                                <p class="portfolio__project__category"> Zobacz więcej</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio__project col-xs-12 col-sm-6 col-lg-3" data-cat="fcc">
+                    <a href="#" title="coming soon">
+                        <div class="portfolio__project__preview">
+                            <img src="https://aprc.it/api/400x400/http://www.toyotadobrygowski.pl/" alt="javascript calculator">
+
+
+                        </div>
+                        <div class="portfolio__project__description">
+                            <div class="info-wrapper">
+                                <h3 class="portfolio__project__name">Landing Page</h3>
+                                <p class="portfolio__project__category"> Zobacz więcej</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio__project col-xs-12 col-sm-6 col-lg-3" data-cat="fcc">
+                    <a href="#" title="coming soon">
+                        <div class="portfolio__project__preview">
+                            <img src="https://aprc.it/api/400x400/https://www.toyotachr.pl/" alt="javascript calculator">
+
+
+                        </div>
+                        <div class="portfolio__project__description">
+                            <div class="info-wrapper">
+                                <h3 class="portfolio__project__name">Landing Page</h3>
+                                <p class="portfolio__project__category"> Zobacz więcej</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio__project col-xs-12 col-sm-6 col-lg-3" data-cat="personal">
+                    <a href="#" title="coming soon">
+                        <div class="portfolio__project__preview">
+                            <img src="https://eevu.github.io/img/txt.svg" alt="text editor">
+                        </div>
+                        <div class="portfolio__project__description">
+                            <div class="info-wrapper">
+                                <h3 class="portfolio__project__name">Text Editor</h3>
+                                <p class="portfolio__project__category">#personal project</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio__project col-xs-12 col-sm-6 col-lg-3" data-cat="personal">
+                    <a href="#" title="coming soon">
+                        <div class="portfolio__project__preview">
+                            <img src="https://eevu.github.io/img/txt.svg" alt="text editor">
+                        </div>
+                        <div class="portfolio__project__description">
+                            <div class="info-wrapper">
+                                <h3 class="portfolio__project__name">Text Editor</h3>
+                                <p class="portfolio__project__category">#personal project</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio__project col-xs-12 col-sm-6 col-lg-3" data-cat="personal">
+                    <a href="#" title="coming soon">
+                        <div class="portfolio__project__preview">
+                            <img src="https://eevu.github.io/img/txt.svg" alt="text editor">
+                        </div>
+                        <div class="portfolio__project__description">
+                            <div class="info-wrapper">
+                                <h3 class="portfolio__project__name">Text Editor</h3>
+                                <p class="portfolio__project__category">#personal project</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio__project col-xs-12 col-sm-6 col-lg-3" data-cat="personal">
+                    <a href="https://en.wikipedia.org/wiki/Bacteriophage" target="_blank" title="what's a becteriophage?">
+                        <div class="portfolio__project__preview">
+                            <img src="https://eevu.github.io/img/bacteriophage.svg" alt="random placeholder">
+                        </div>
+                        <div class="portfolio__project__description">
+                            <div class="info-wrapper">
+                                <h3 class="portfolio__project__name"> Bacteriophage </h3>
+                                <p class="portfolio__project__category">#placeholder</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio__project col-xs-12 col-sm-6 col-lg-3" data-cat="personal">
+                    <a href="#" title="coming soon">
+                        <div class="portfolio__project__preview">
+                            <img src="https://eevu.github.io/img/desktop.svg" alt="random placeholder">
+                        </div>
+                        <div class="portfolio__project__description">
+                            <div class="info-wrapper">
+                                <h3 class="portfolio__project__name"> Desktop </h3>
+                                <p class="portfolio__project__category">#placeholder</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio__project col-xs-12 col-sm-6 col-lg-3" data-cat="personal">
+                    <a href="#" title="coming soon">
+                        <div class="portfolio__project__preview">
+                            <img src="https://eevu.github.io/img/laptop.svg" alt="random placeholder">
+                        </div>
+                        <div class="portfolio__project__description">
+                            <div class="info-wrapper">
+                                <h3 class="portfolio__project__name"> Laptop </h3>
+                                <p class="portfolio__project__category">#placeholder</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+        <section id="oferta" class="oferta-section">
+            <div class="oferta">
+                <h3 id="oferta-header">Co mogę dla Ciebie zrobić. </h3>
+                <div class="col-6" id="oferta-steps">
+                    <img id="do" align="right" src="do.jpg" alt="Smiley face" height="402" width="650">
+                    <div id="oferta-steps-text">
+                        <h3> Stworzyć statyczną stronę internetową</h3>
+                        <p>Gdy edycja treści na stronie nie jest dla Ciebie niezbędna - idealna może okazać się strona statyczna, którą utworzę od podstaw i dostosuję do Twoich potrzeb</p>
+                        </br>
+                        <a href="ttt/statyczna"><button type="button" id="but" >Zobacz więcej</button></a>
+                    </div>
+
+                </div>
+                <div class="col-6" id="oferta-steps-2">
+                    <img id="do" align="left" src="do4.jpg" alt="Smiley face" height="402" width="450">
+                    <div id="oferta-steps-text-2">
+                        <h3>Wykonać witrynę opartą o system CMS</h3>
+                        <p>Strona podpięta pod system zarządzania treścią da Ci niegraniczone możliwości edycji, dzięki czemu samodzielnie wyprzedzisz swoją konkurencję.</p>
+                        </br>
+                        <a class="smoothScroll" href="#about"><button type="button" id="but" >Zobacz więcej</button></a>
+                    </div>
+
+                </div>
+                <div class="col-6" id="oferta-steps">
+                    <img id="do" align="right" src="do2.jpg" alt="Smiley face" height="402" width="650">
+                    <div id="oferta-steps-text">
+                        <h3> Przekuć szablon PSD w działający produkt</h3>
+                        <p>A może posiadasz projekt graficzny Twojej wymarzonej witryny? W takiej sytuacji chętnie zajmę się stworzeniem gotowego produktu na jego podstawie.</p>
+                        </br>
+                        <a class="smoothScroll" href="#about"><button type="button" id="but" >Zobacz więcej</button></a>
+                    </div>
+
+                </div>
+                <div class="col-6" id="oferta-steps-2">
+                    <img id="do" align="left" src="do3.jpg" alt="Smiley face" height="402" width="450">
+                    <div id="oferta-steps-text-2">
+                        <h3>Zaopiekować się Twoją stroną</h3>
+                        <p>Jestem do usług również gdy nie odpowiada Ci obecny stan Twojej witryny. Zaktualizuję, zoptymalizuję i zaopiekuję się Twoją stroną internetową..</p>
+                        </br>
+                        <a class="smoothScroll" href="#about"><button type="button" id="but" >Zobacz więcej</button></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer-section" id="kontakt">
+            <h3 id="footer-header">Stwórzmy razem coś wspaniałego </h3>
+            </br>
+
+            <div class="grid-center">
+                <div class="col-6" id="kontakt-sekcja-1">
+                    <h3>Dane Kontaktowe:</h3>
+                    <p>E-mail : patryk.pilecki@onet.eu</p>
+
+                    <p>Telefon: 504-341-161</p>
+
+
+
+
+                </div>
+                <div class="col-6">
+                    <div class="main">
+                        <div class="info">Give Your Feedback!</div>
+                        <form action="mail_handler.php" method="post" name="form" class="form-box">
+                            <label for="name">Name</label><br>
+                            <input type="text" name="name" class="inp" placeholder="Enter Your Name" required><br>
+                            <label for="email">Email ID</label><br>
+                            <input type="email" name="email" class="inp" placeholder="Enter Your Email" required><br>
+                            <label for="phone">Phone</label><br>
+                            <input type="tel" name="phone" class="inp" placeholder="Enter Your Phone" required><br>
+                            <label for="message">Message</label><br>
+                            <textarea name="msg" class="msg-box" placeholder="Enter Your Message Here..." required></textarea><br>
+                            <input type="submit" name="submit" value="Send" class="sub-btn">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
